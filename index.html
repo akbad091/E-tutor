@@ -52,6 +52,9 @@
         nav {
             @apply text-sm leading-[20px] text-gray flex gap-[24px];
         }
+        .container {
+            @apply max-w-[1320px] mx-auto px-6;
+        }
     </style>
 </head>
 
@@ -59,14 +62,14 @@
     <!-- ============================================
                     NAVIGATION BAR
          ============================================ -->
-    <div class="bg-[#1D2026] flex items-center justify-between px-[32px] py-[16px]">
+    <div class="bg-[#1D2026] flex items-center justify-between px-[32px]">
         <!-- Main Navigation Links -->
         <nav>
-            <a href="index.html" class="text-white border-t-2 border-orange-500">Home</a>
-            <a href="category.html">Courses</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="instructor.html">Become an Instructor</a>
+            <a href="index.html" class="text-white border-t-2 border-orange-500 p-[16px]">Home</a>
+            <a href="category.html" class="p-[16px]">Courses</a>
+            <a href="about.html" class="p-[16px]">About</a>
+            <a href="contact.html" class="p-[16px]">Contact</a>
+            <a href="instructor.html" class="p-[16px]">Become an Instructor</a>
         </nav>
 
         <!-- Currency & Language Selectors -->
@@ -85,7 +88,7 @@
     <!-- ============================================
                     HEADER / TOP BAR
          ============================================ -->
-    <header class="flex items-center justify-between px-[32px] py-[24px]">
+    <header class="flex items-center justify-between px-[32px] py-[24px] border-b-2 border-[#E9EAF0]">
         <!-- Logo, Browse Button & Search Bar -->
         <div class="flex">
             <img src="./Images/LOGO.svg" alt="logo">
@@ -136,9 +139,9 @@
         <!-- ============================================
                         HERO SECTION
              ============================================ -->
-        <section class="flex pl-[300px]">
+        <section class="flex flex-row items-center justify-between pl-[300px]">
             <!-- Hero Content -->
-            <div class="my-[100px] space-y-[40px]">
+            <div class="space-y-[40px] max-w-[648px]">
                 <h1 class="text-7xl leading-[74px] font-semibold">Learn with expert anytime anywhere</h1>
                 <p class="text-2xl leading-[32px] text-[#4E5566]">Our mision is to help people to find the best course
                     online and learn with expert anytime, anywhere.</p>
@@ -146,20 +149,24 @@
                     Create Account
                 </button>
             </div>
-            <img src="./Images/Images-1.jpg" alt="" class="ml-[72px]">
+            <div>
+                <img src="./Images/Images-1.jpg" alt="">
+            </div>
         </section>
 
         <!-- ============================================
                     CATEGORY SECTION
              ============================================ -->
-        <section class="py-[80px]">
+        <section class="py-[80px] container space-y-[40px]">
             <h2 class="text-4xl leading-[48px] font-semibold text-center">Browse top category</h2>
 
             <!-- Category Grid (12 items) -->
-            <div class="grid grid-cols-4 text-white text-base leading-[22px] gap-[24px] mx-[300px] my-[40px]">
+            <div class="grid grid-cols-4 text-white text-base leading-[22px] gap-[24px]">
                 <!-- Category Item 1: Design/Label -->
                 <div class="flex flex-row gap-[20px] bg-[#EBEBFF] p-[20px]">
-                    <img src="./Images/Frame 145.svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145.svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">Label</h6>
                         <p class="text-[#6E7485]">63,476 Courses</p>
@@ -168,7 +175,9 @@
 
                 <!-- Category Item 2: Business -->
                 <div class="flex flex-row gap-[20px] bg-[#E1F7E3] p-[20px]">
-                    <img src="./Images/Frame 145 (2).svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145 (2).svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">Business</h6>
                         <p class="text-[#6E7485]">52,822 Courses</p>
@@ -177,7 +186,9 @@
 
                 <!-- Category Item 3: Finance & Accounting -->
                 <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
-                    <img src="./Images/Frame 145 (1).svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145 (1).svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">Finance & Accounting</h6>
                         <p class="text-[#6E7485]">33,841 Courses</p>
@@ -186,7 +197,9 @@
 
                 <!-- Category Item 4: IT & Software -->
                 <div class="flex flex-row gap-[20px] bg-[#FFF0F0] p-[20px]">
-                    <img src="./Images/Frame 145 (3).svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145 (3).svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">IT & Software</h6>
                         <p class="text-[#6E7485]">22,649 Courses</p>
@@ -195,7 +208,9 @@
 
                 <!-- Category Item 5: Personal Development -->
                 <div class="flex flex-row gap-[20px] bg-white shadow-xl p-[20px]">
-                    <img src="./Images/Frame 145 (4).svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145 (4).svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">Personal Development</h6>
                         <p class="text-[#6E7485]">20,126 Courses</p>
@@ -204,7 +219,9 @@
 
                 <!-- Category Item 6: Office Productivity -->
                 <div class="flex flex-row gap-[20px] bg-[#F5F7FA] p-[20px]">
-                    <img src="./Images/Frame 145 (5).svg" alt="">
+                    <div>
+                        <img src="./Images/Frame 145 (5).svg" alt="">
+                    </div>
                     <div class="space-y-[8px]">
                         <h6 class="text-[#1D2026] font-medium">Office Productivity</h6>
                         <p class="text-[#6E7485]">13,932 Courses</p>
@@ -277,11 +294,11 @@
         <!-- ============================================
                 BEST SELLING COURSES SECTION
              ============================================ -->
-        <section class="relative bg-[#F5F7FA] px-[300px] pt-[80px] pb-[320px]">
+        <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
             <h2 class="text-4xl leading-[48px] font-semibold text-center">Best selling courses</h2>
 
             <!-- Course Cards Grid (10 items) -->
-            <div class="grid grid-cols-5 gap-[25px] mt-[40px] mb-[67px]">
+            <div class="grid grid-cols-5 gap-[25px] container mt-[40px] mb-[400px]">
                 <!-- Course Card 1: Design -->
                 <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
                     <img src="./Images/section-3/Course Images.jpg" alt="">
@@ -295,7 +312,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Machine Learning A-Z™:<br> Hands-On
                             Python & R In Data...</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -317,7 +334,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete 2021 Web Development
                             Bootcamp</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -339,7 +356,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Learn Python Programming Masterclass
                         </p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -361,7 +378,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Digital Marketing Course
                             - 12 Courses in 1</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -383,7 +400,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Reiki Level I, II and Master/Teacher
                             Program</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -405,7 +422,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Foundation Stock Trading
                             Course</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -427,7 +444,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Beginner to Pro in Excel: Financial
                             Modeling and Valuati...</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -449,7 +466,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Python Mega Course: Build 10 Real
                             World Applications</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -471,7 +488,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Copywriting - Become a Freelance
                             Copywriter, your ow...</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -493,7 +510,7 @@
                         <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Google Analytics Certification - Learn
                             How To Pass The Exam</p>
                     </div>
-                    <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[14px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -505,7 +522,7 @@
                 </div>
 
             </div>
-            <div class="p-[80px] bg-white border-[1px] border-[#E9EAF0] absolute left-[220px]">
+            <div class="p-[80px] bg-white border-[1px] border-[#E9EAF0] absolute place-self-center">
                 <div class="flex justify-between items-start mb-14">
                     <h2 class="text-4xl leading-[48px] font-semibold text-[#1D2026]">
                         Our feature courses
@@ -688,7 +705,7 @@
         <!-- ============================================
             RECENTLY ADDED COURSES SECTION
          ============================================ -->
-        <section class="px-[300px] py-[80px] space-y-[40px] mt-[360px]">
+        <section class="container py-[80px] space-y-[40px] mt-[60px]">
             <h2 class="text-4xl leading-[48px] font-semibold text-center">Recently added courses</h2>
 
             <!-- Recently Added Courses Grid -->
@@ -705,7 +722,7 @@
                         <p class="text-base leading-[22px] font-medium text-[#1D2026]">The Python Mega Course: Build 10
                             Real World Applications</p>
                     </div>
-                    <div class="w-[312px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[18px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -730,7 +747,7 @@
                         <p class="text-base leading-[22px] font-medium text-[#1D2026]">Facebook Ads & Facebook Marketing
                             MASTERY 2021 Cours...</p>
                     </div>
-                    <div class="w-[312px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[18px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -755,7 +772,7 @@
                         <p class="text-base leading-[22px] font-medium text-[#1D2026]">2021 Complete Python Bootcamp
                             From Zero to Hero in Python</p>
                     </div>
-                    <div class="w-[312px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[18px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -780,7 +797,7 @@
                         <p class="text-base leading-[22px] font-medium text-[#1D2026]">How to get Diamond in soloQ |
                             League of Legends | Season 11</p>
                     </div>
-                    <div class="w-[312px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
                     <div class="flex flex-row items-center justify-between px-[18px]">
                         <p
                             class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
@@ -803,9 +820,9 @@
         <!-- ============================================
             BECOME AN INSTRUCTOR SECTION
          ============================================ -->
-        <section class="relative bg-[#F5F7FA] pt-[80px] px-[300px] pb-[320px]">
+        <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
             <!-- Instructor Promotion Cards -->
-            <div class="flex flex-row gap-[24px] mb-[80px]">
+            <div class="flex flex-row gap-[24px] container mb-[400px]">
                 <!-- Become Instructor Card -->
                 <div class="w-[648px] h-[271px] bg-gradient-to-r from-[#CC522B] to-[#FF6636] flex items-center justify-between">
                     <div class="text-white p-[40px]">
@@ -865,7 +882,7 @@
             </div>
 
             <!-- Top Instructors Card -->
-            <div class="absolute left-[220px] p-[80px] border-[1px] border-[#E9EAF0] space-y-[40px] bg-white">
+            <div class="absolute place-self-center p-[80px] border-[1px] border-[#E9EAF0] space-y-[40px] bg-white">
                 <h2 class="text-4xl leading-[48px] font-semibold text-center">Top instructor of the month</h2>
 
                 <!-- Instructor Grid -->
@@ -973,7 +990,7 @@
         <!-- ============================================
             TRUSTED COMPANIES SECTION
          ============================================ -->
-        <section class="px-[300px] py-[80px] flex flex-row items-center gap-[24px] mt-[360px]">
+        <section class="container py-[80px] flex flex-row items-center gap-[24px] mt-[60px]">
             <!-- Section Title & Description -->
             <div class="space-y-[24px]">
                 <h3 class="text-3xl text-[#1D2026] leading-[40px] tracking-[-1%] font-semibold">6.3k trusted companies
@@ -1029,7 +1046,7 @@
          ============================================ -->
     <footer class="text-white bg-[#1D2026] space-y-[80px]">
         <!-- Footer Top Content -->
-        <div class="py-[100px] px-[300px] flex flex-row items-center gap-[136px]">
+        <div class="py-[100px] container flex flex-row items-center gap-[136px]">
             <!-- CTA Section -->
             <div class="max-w-[536px] space-y-[32px]">
                 <h2 class="text-4xl leading-[48px] font-semibold">Start learning with 67.1k students around the world.
