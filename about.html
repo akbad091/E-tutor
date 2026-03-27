@@ -63,6 +63,9 @@
         h6 {
             @apply text-base leading-[22px] font-medium;
         }
+        .container {
+            @apply max-w-[1320px] mx-auto px-6;
+        }
     </style>
 </head>
 
@@ -70,14 +73,14 @@
     <!-- ============================================
                     NAVIGATION BAR
          ============================================ -->
-    <div class="bg-[#1D2026] flex items-center justify-between px-[32px] py-[16px]">
+    <div class="bg-[#1D2026] flex items-center justify-between px-[32px]">
         <!-- Main Navigation Links -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href="category.html">Courses</a>
-            <a href="about.html" class="text-white border-t-2 border-orange-500">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="instructor.html">Become an Instructor</a>
+            <a href="index.html" class="p-[16px]">Home</a>
+            <a href="category.html" class="p-[16px]">Courses</a>
+            <a href="about.html" class="p-[16px] text-white border-t-2 border-orange-500">About</a>
+            <a href="contact.html" class="p-[16px]">Contact</a>
+            <a href="instructor.html" class="p-[16px]">Become an Instructor</a>
         </nav>
 
         <!-- Currency & Language Selectors -->
@@ -96,7 +99,7 @@
     <!-- ============================================
                     HEADER / TOP BAR
          ============================================ -->
-    <header class="flex items-center justify-between px-[32px] py-[24px]">
+    <header class="flex items-center justify-between px-[32px] py-[24px] border-b-2 border-[#E9EAF0]">
         <!-- Logo, Browse Button & Search Bar -->
         <div class="flex">
             <img src="./Images/LOGO.svg" alt="logo">
@@ -142,13 +145,16 @@
             </div>
         </div>
     </header>
+
     <main>
-        <section class="text-center bg-[#F5F7FA] text-[#1D2026] py-[40px] px-[300px] space-y-[16px]">
-            <h4 class="text-2xl leading-[32px] font-semibold">About</h4>
-            <p class="text-sm leading-[22px]"><span class="text-[#6E7485]">Home /</span> About</p>
+        <section class="text-center bg-[#F5F7FA] text-[#1D2026] py-[40px] space-y-[16px]">
+            <div class="container">
+                <h4 class="text-2xl leading-[32px] font-semibold">About</h4>
+                <p class="text-sm leading-[22px]"><span class="text-[#6E7485]">Home /</span> About</p>
+            </div>
         </section>
 
-        <section class="flex items-center flex-row gap-[112px] py-[80px] px-[300px]">
+        <section class="flex items-center flex-row gap-[112px] py-[80px] container">
             <div class="space-y-[32px] max-w-[535px]">
                 <div class="space-y-[16px]">
                     <h1 class="text-8xl leading-[80px] font-semibold text-[#E9EAF0]">2007-2021</h1>
@@ -162,7 +168,7 @@
             <img src="./about-images/Images.jpg" alt="About image">
         </section>
 
-        <section class="space-y-[80px] py-[80px] px-[300px]">
+        <section class="space-y-[80px] py-[80px] container">
             <div class="flex flex-row items-center justify-between">
                 <div class="space-y-[20px] max-w-[368px]">
                     <h4>We Just keep growing
@@ -249,23 +255,28 @@
             </div>
         </section>
 
-        <section class="flex flex-row items-center px-[300px] gap-[136px] bg-[#FFEEE8]">
-            <img src="./about-images/two-business-partners-working-office 1.svg" alt="" class="max-w-[648px]">
-            <div class="space-y-[24px] max-w-[536px]">
-                <div class="space-y-[8px]">
-                    <h6 class="text-[#FF6636]">OUR ONE BILLION MISSION</h6>
-                    <h3 class="text-4xl leading-[48px] tracking-[-1%] text-[#1D2026] font-semibold">Our one billion
-                        mission sounds bold, We agree.</h3>
+        <section class="bg-[#FFEEE8]">
+            <div class="container flex flex-row items-center gap-[136px]">
+                <img src="./about-images/two-business-partners-working-office 1.svg" alt="" class="max-w-[648px]">
+                <div class="space-y-[24px] max-w-[536px]">
+                    <div class="space-y-[8px]">
+                        <h6 class="text-[#FF6636]">OUR ONE BILLION MISSION</h6>
+                        <h3 class="text-4xl leading-[48px] tracking-[-1%] text-[#1D2026] font-semibold">Our one billion
+                            mission sounds bold, We agree.</h3>
+                    </div>
+                    <p class="text-base leading-[24px] text-[#4E5566]">"We cannot solve our problems with the same
+                        thinking
+                        we used when we created them."—Albert Einstein.
+                        Institutions are slow to change. Committees are where good ideas and innovative thinking go to
+                        die.
+                        Choose agility over dogma. Embrace and drive change. We need to wipe the slate clean and begin
+                        with
+                        bold, radical thinking.</p>
                 </div>
-                <p class="text-base leading-[24px] text-[#4E5566]">"We cannot solve our problems with the same thinking
-                    we used when we created them."—Albert Einstein.
-                    Institutions are slow to change. Committees are where good ideas and innovative thinking go to die.
-                    Choose agility over dogma. Embrace and drive change. We need to wipe the slate clean and begin with
-                    bold, radical thinking.</p>
             </div>
         </section>
 
-        <section class="flex flex-row items-center py-[80px] pr-[150px] pl-[300px] gap-[112px]">
+        <section class="flex flex-row items-center py-[80px] pl-[180px] gap-[112px]">
             <div class="space-y-[24px] max-w-[424px]">
                 <div class="space-y-[8px]">
                     <h6 class="text-[#FF6636]">OUR GALLERY</h6>
@@ -282,7 +293,7 @@
             <img src="./about-images/Gallery.svg" alt="">
         </section>
 
-        <section class="flex flex-row gap-[24px] px-[300px] py-[80px]">
+        <section class="flex flex-row gap-[24px] container py-[80px]">
             <div class="space-y-[20px] max-w-[424px]">
                 <div class="p-[24px] space-y-[8px] bg-[#F5F7FA]">
                     <div class="flex flex-row justify-between">
