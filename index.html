@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-    <!-- META INFORMATION -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Tutor</title>
+  <!-- META INFORMATION -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Tutor</title>
 
-    <!-- EXTERNAL RESOURCES -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
+  <!-- EXTERNAL RESOURCES -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
 
-    <!-- CUSTOM STYLES -->
-    <style type="text/tailwindcss">
-        @theme {
+  <!-- CUSTOM STYLES -->
+  <style type="text/tailwindcss">
+    @theme {
             /* ========== COLORS ========== */
             --color-gray: #8C94A3;
             --color-neutral-white: #f6f6f6;
@@ -59,1112 +59,1148 @@
 </head>
 
 <body class="font-inter">
-    <!-- ============================================
+  <!-- ============================================
                     NAVIGATION BAR
          ============================================ -->
-    <div class="bg-[#1D2026] flex items-center justify-between px-[32px]">
-        <!-- Main Navigation Links -->
-        <nav>
-            <a href="index.html" class="text-white border-t-2 border-orange-500 p-[16px]">Home</a>
-            <a href="category.html" class="p-[16px]">Courses</a>
-            <a href="about.html" class="p-[16px]">About</a>
-            <a href="contact.html" class="p-[16px]">Contact</a>
-            <a href="instructor.html" class="p-[16px]">Become an Instructor</a>
-        </nav>
+  <div class="bg-[#1D2026] flex items-center justify-between px-[32px]">
+    <!-- Main Navigation Links -->
+    <nav>
+      <a href="index.html" class="text-white border-t-2 border-orange-500 p-[16px]">Home</a>
+      <a href="category.html" class="p-[16px]">Courses</a>
+      <a href="about.html" class="p-[16px]">About</a>
+      <a href="contact.html" class="p-[16px]">Contact</a>
+      <a href="instructor.html" class="p-[16px]">Become an Instructor</a>
+    </nav>
 
-        <!-- Currency & Language Selectors -->
-        <div class="flex gap-[24px] text-gray text-sm leading-[22px]">
-            <a href="#" class="flex flex-row items-center gap-[6px]">USD <span><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg></span></a>
-            <a href="#" class="flex flex-row items-center gap-[6px]">English <span><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg></span></a>
-        </div>
+    <!-- Currency & Language Selectors -->
+    <div class="flex gap-[24px] text-gray text-sm leading-[22px]">
+      <a href="#" class="flex flex-row items-center gap-[6px]">USD <span><svg class="w-4 h-4" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg></span></a>
+      <a href="#" class="flex flex-row items-center gap-[6px]">English <span><svg class="w-4 h-4" fill="none"
+            stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg></span></a>
     </div>
+  </div>
 
-    <!-- ============================================
+  <!-- ============================================
                     HEADER / TOP BAR
          ============================================ -->
-    <header class="flex items-center justify-between px-[32px] py-[24px] border-b-2 border-[#E9EAF0]">
-        <!-- Logo, Browse Button & Search Bar -->
-        <div class="flex">
-            <img src="./Images/LOGO.svg" alt="logo">
+  <header class="flex items-center justify-between px-[32px] py-[24px] border-b-2 border-[#E9EAF0]">
+    <!-- Logo, Browse Button & Search Bar -->
+    <div class="flex">
+      <img src="./Images/LOGO.svg" alt="logo">
 
-            <!-- Browse Dropdown -->
-            <div class="ml-[50px] mr-[16px]">
-                <button
-                    class="flex items-center justify-between gap-2 border border-gray-300 w-[200px] h-[48px] px-[16px] rounded-md text-gray-700 hover:bg-gray-50">
-                    Browse
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
+      <!-- Browse Dropdown -->
+      <div class="ml-[50px] mr-[16px]">
+        <button
+          class="flex items-center justify-between gap-2 border border-gray-300 w-[200px] h-[48px] px-[16px] rounded-md text-gray-700 hover:bg-gray-50">
+          Browse
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
 
-            <!-- Search Input -->
-            <div class="relative">
-                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                    <img src="./images/MagnifyingGlass.svg" alt="Search icon" class="w-5 h-5 text-gray-500" />
-                </div>
-                <input type="text" placeholder="What do you want learn..."
-                    class="w-full pl-10 pr-[177px] py-[12px] border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
-            </div>
+      <!-- Search Input -->
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <img src="./images/MagnifyingGlass.svg" alt="Search icon" class="w-5 h-5 text-gray-500" />
         </div>
+        <input type="text" placeholder="What do you want learn..."
+          class="w-full pl-10 pr-[177px] py-[12px] border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+      </div>
+    </div>
 
-        <!-- User Actions & Buttons -->
-        <div class="flex items-center gap-6">
-            <!-- Icons (Notifications, Wishlist, Cart) -->
-            <div class="flex items-center gap-4 text-gray-600">
-                <img src="./Images/Bell.svg" alt="Notifications">
-                <img src="./Images/Heart.svg" alt="Wishlist">
-                <img src="./Images/ShoppingCartSimple.svg" alt="Shopping Cart">
-            </div>
-
-            <!-- Auth Buttons -->
-            <div class="flex items-center gap-3">
-                <button class="px-[24px] py-[12px] font-semibold bg-orange-100 text-orange-600 hover:bg-orange-200">
-                    Create Account
-                </button>
-                <button class="px-[24px] py-[12px] font-semibold bg-orange-500 text-white hover:bg-orange-600">
-                    Sign In
-                </button>
-            </div>
+    <!-- User Actions & Buttons -->
+    <div class="flex items-center gap-6">
+      <!-- Icons (Notifications, Wishlist, Cart) -->
+      <div class="flex items-center gap-4 text-gray-600">
+        <img src="./Images/Bell.svg" alt="Notifications">
+        <img src="./Images/Heart.svg" alt="Wishlist">
+        <div class="relative">
+          <img src="./Images/ShoppingCartSimple.svg" alt="Shopping Cart">
+          <span id="cartCount"
+            class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full hidden">
+            0
+          </span>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <!-- ============================================
+      <!-- Auth Buttons -->
+      <div class="flex items-center gap-3">
+        <button class="px-[24px] py-[12px] font-semibold bg-orange-100 text-orange-600 hover:bg-orange-200">
+          Create Account
+        </button>
+        <button class="px-[24px] py-[12px] font-semibold bg-orange-500 text-white hover:bg-orange-600">
+          Sign In
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
                         HERO SECTION
              ============================================ -->
-        <section class="flex flex-row items-center justify-between pl-[300px]">
-            <!-- Hero Content -->
-            <div class="space-y-[40px] max-w-[648px]">
-                <h1 class="text-7xl leading-[74px] font-semibold">Learn with expert anytime anywhere</h1>
-                <p class="text-2xl leading-[32px] text-[#4E5566]">Our mision is to help people to find the best course
-                    online and learn with expert anytime, anywhere.</p>
-                <button class="px-[32px] py-[16px] font-semibold bg-[#FF6636] text-white hover:bg-[#FF6636]/90">
-                    Create Account
-                </button>
-            </div>
-            <div>
-                <img src="./Images/Images-1.jpg" alt="">
-            </div>
-        </section>
-
-        <!-- ============================================
-                    CATEGORY SECTION
-             ============================================ -->
-        <section class="py-[80px] container space-y-[40px]">
-            <h2 class="text-4xl leading-[48px] font-semibold text-center">Browse top category</h2>
-
-            <!-- Category Grid (12 items) -->
-            <div class="grid grid-cols-4 text-white text-base leading-[22px] gap-[24px]">
-                <!-- Category Item 1: Design/Label -->
-                <div class="flex flex-row gap-[20px] bg-[#EBEBFF] p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145.svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Label</h6>
-                        <p class="text-[#6E7485]">63,476 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 2: Business -->
-                <div class="flex flex-row gap-[20px] bg-[#E1F7E3] p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145 (2).svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Business</h6>
-                        <p class="text-[#6E7485]">52,822 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 3: Finance & Accounting -->
-                <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145 (1).svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Finance & Accounting</h6>
-                        <p class="text-[#6E7485]">33,841 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 4: IT & Software -->
-                <div class="flex flex-row gap-[20px] bg-[#FFF0F0] p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145 (3).svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">IT & Software</h6>
-                        <p class="text-[#6E7485]">22,649 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 5: Personal Development -->
-                <div class="flex flex-row gap-[20px] bg-white shadow-xl p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145 (4).svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Personal Development</h6>
-                        <p class="text-[#6E7485]">20,126 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 6: Office Productivity -->
-                <div class="flex flex-row gap-[20px] bg-[#F5F7FA] p-[20px]">
-                    <div>
-                        <img src="./Images/Frame 145 (5).svg" alt="">
-                    </div>
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Office Productivity</h6>
-                        <p class="text-[#6E7485]">13,932 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 7: Marketing -->
-                <div class="flex flex-row gap-[20px] bg-[#EBEBFF] p-[20px]">
-                    <img src="./Images/Frame 145 (6).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Marketing</h6>
-                        <p class="text-[#6E7485]">12,068 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 8: Photography & Video -->
-                <div class="flex flex-row gap-[20px] bg-[#F5F7FA] p-[20px]">
-                    <img src="./Images/Frame 145 (7).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Photography & Video</h6>
-                        <p class="text-[#6E7485]">6,196 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 9: Lifestyle -->
-                <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
-                    <img src="./Images/Frame 145 (8).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Lifestyle</h6>
-                        <p class="text-[#6E7485]">2,736 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 10: Design -->
-                <div class="flex flex-row gap-[20px] bg-[#FFEEE8] p-[20px]">
-                    <img src="./Images/Frame 145 (9).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Design</h6>
-                        <p class="text-[#6E7485]">2,600 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 11: Health & Fitness -->
-                <div class="flex flex-row gap-[20px] bg-[#E1F7E3] p-[20px]">
-                    <img src="./Images/Frame 145 (10).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Health & Fitness</h6>
-                        <p class="text-[#6E7485]">1,678 Courses</p>
-                    </div>
-                </div>
-
-                <!-- Category Item 12: Music -->
-                <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
-                    <img src="./Images/Frame 145 (11).svg" alt="">
-                    <div class="space-y-[8px]">
-                        <h6 class="text-[#1D2026] font-medium">Music</h6>
-                        <p class="text-[#6E7485]">959 Courses</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Browse All CTA -->
-            <div class="flex flex-row items-center justify-center gap-[8px] py-[6px]">
-                <p class="text-[#6E7485] text-center">We have more category & subcategory.</p>
-                <a href="#" class="text-[#FF6636] font-medium text-sm leading-[20px]">Browse all</a>
-                <img src="./Images/ArrowRight.svg" alt="">
-            </div>
-        </section>
-
-        <!-- ============================================
-                BEST SELLING COURSES SECTION
-             ============================================ -->
-        <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
-            <h2 class="text-4xl leading-[48px] font-semibold text-center">Best selling courses</h2>
-
-            <!-- Course Cards Grid (10 items) -->
-            <div class="grid grid-cols-5 gap-[25px] container mt-[40px] mb-[400px]">
-                <!-- Course Card 1: Design -->
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images.jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#FFEEE8] text-xxs leading-xxs font-medium uppercase text-[#993D20] py-[4px] px-[6px]">
-                                Design</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Machine Learning A-Z™:<br> Hands-On
-                            Python & R In Data...</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (1).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
-                                Developments</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete 2021 Web Development
-                            Bootcamp</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (2).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                Business</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Learn Python Programming Masterclass
-                        </p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (3).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
-                                Marketing</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Digital Marketing Course
-                            - 12 Courses in 1</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (4).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#FFF0F0] text-xxs leading-xxs font-medium uppercase text-[#882929] py-[4px] px-[6px]">
-                                IT & Software</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Reiki Level I, II and Master/Teacher
-                            Program</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (5).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#FFF2E5] text-xxs leading-xxs font-medium uppercase text-[#65390C] py-[4px] px-[6px]">
-                                Music</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Foundation Stock Trading
-                            Course</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (6).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
-                                Marketing</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Beginner to Pro in Excel: Financial
-                            Modeling and Valuati...</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (7).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                Health & Fitness</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Python Mega Course: Build 10 Real
-                            World Applications</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (8).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#FFEEE8] text-xxs leading-xxs font-medium uppercase text-[#993D20] py-[4px] px-[6px]">
-                                Design</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Copywriting - Become a Freelance
-                            Copywriter, your ow...</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-                <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
-                    <img src="./Images/section-3/Course Images (9).jpg" alt="">
-                    <div class="space-y-[10px]">
-                        <div class="flex flex-row justify-between items-center px-[14px]">
-                            <h6
-                                class="bg-[#FFF2E5] text-xxs leading-xxs font-medium uppercase text-[#65390C] py-[4px] px-[6px]">
-                                Lifestyle</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Google Analytics Certification - Learn
-                            How To Pass The Exam</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[14px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="p-[80px] bg-white border-[1px] border-[#E9EAF0] absolute place-self-center">
-                <div class="flex justify-between items-start mb-14">
-                    <h2 class="text-4xl leading-[48px] font-semibold text-[#1D2026]">
-                        Our feature courses
-                    </h2>
-                    <p class="text-[#4E5566] max-w-[424px] text-sm leading-[22px]">
-                        Vestibulum sed dolor sed diam mollis maximus vel nec dolor. Donec varius purus et eleifend
-                        porta.
-                    </p>
-                </div>
-                <div class="grid grid-cols-2 gap-[24px]">
-                    <div class="border-[1px] border-[#E9EAF0] flex">
-                        <img src="./Images/section-3/Course-Images.jpg" alt="">
-                        <div class="py-[16px] space-y-[17px]">
-                            <div class="space-y-[8px] px-[24px]">
-                                <div class="flex flex-row items-center justify-between">
-                                    <h6
-                                        class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                        Health & Fitness</h6>
-                                    <p class="text-xl leading-[24px]">$14.00 <span
-                                            class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
-                                </div>
-                                <p class="text-base leading-[22px] font-medium text-[#1D2026]">Investing In Stocks The
-                                    Complete Course!
-                                    (13 H...</p>
-                            </div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <div class="flex flex-row items-center gap-[12px]">
-                                    <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
-                                    <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
-                                </div>
-                                <p
-                                    class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
-                                    <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
-                                        class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
-                                </p>
-                            </div>
-                            <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <p
-                                    class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                                    <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                        class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-[1px] border-[#E9EAF0] flex">
-                        <img src="./Images/section-3/Course-Images (1).jpg" alt="">
-                        <div class="py-[16px] space-y-[17px]">
-                            <div class="space-y-[8px] px-[24px]">
-                                <div class="flex flex-row items-center justify-between">
-                                    <h6
-                                        class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                        Personal Development</h6>
-                                    <p class="text-xl leading-[24px]">$14.00 <span
-                                            class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
-                                </div>
-                                <p class="text-base leading-[22px] font-medium text-[#1D2026]">Google Analytics
-                                    Certification - Learn How To...</p>
-                            </div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <div class="flex flex-row items-center gap-[12px]">
-                                    <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
-                                    <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
-                                </div>
-                                <p
-                                    class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
-                                    <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
-                                        class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
-                                </p>
-                            </div>
-                            <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <p
-                                    class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                                    <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                        class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-[1px] border-[#E9EAF0] flex">
-                        <img src="./Images/section-3/Course-Images (2).jpg" alt="">
-                        <div class="py-[16px] space-y-[17px]">
-                            <div class="space-y-[8px] px-[24px]">
-                                <div class="flex flex-row items-center justify-between">
-                                    <h6
-                                        class="bg-[#F5F7FA] text-xxs leading-xxs font-medium uppercase text-[#1D2026] py-[4px] px-[6px]">
-                                        Productivity</h6>
-                                    <p class="text-xl leading-[24px]">$14.00 <span
-                                            class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
-                                </div>
-                                <p class="text-base leading-[22px] font-medium text-[#FF6636]">Adobe XD for Web Design:
-                                    Essential Principles</p>
-                            </div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <div class="flex flex-row items-center gap-[12px]">
-                                    <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
-                                    <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
-                                </div>
-                                <p
-                                    class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
-                                    <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
-                                        class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
-                                </p>
-                            </div>
-                            <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <p
-                                    class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                                    <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                        class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border-[1px] border-[#E9EAF0] flex">
-                        <img src="./Images/section-3/Course-Images (3).jpg" alt="">
-                        <div class="py-[16px] space-y-[17px]">
-                            <div class="space-y-[8px] px-[24px]">
-                                <div class="flex flex-row items-center justify-between">
-                                    <h6
-                                        class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                        Music</h6>
-                                    <p class="text-xl leading-[24px]">$14.00 <span
-                                            class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
-                                </div>
-                                <p class="text-base leading-[22px] font-medium text-[#1D2026]">The Python Mega Course:
-                                    Build 10 Real World ...</p>
-                            </div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <div class="flex flex-row items-center gap-[12px]">
-                                    <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
-                                    <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
-                                </div>
-                                <p
-                                    class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
-                                    <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
-                                        class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
-                                </p>
-                            </div>
-                            <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                            <div class="flex flex-row items-center justify-between px-[20px]">
-                                <p
-                                    class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                                    <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                        class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
-                                </p>
-                                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
-                                    <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================
-            RECENTLY ADDED COURSES SECTION
-         ============================================ -->
-        <section class="container py-[80px] space-y-[40px] mt-[60px]">
-            <h2 class="text-4xl leading-[48px] font-semibold text-center">Recently added courses</h2>
-
-            <!-- Recently Added Courses Grid -->
-            <div class="grid grid-cols-4 gap-[24px]">
-                <div class="space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]">
-                    <img src="./Images/section-4/Course Images.jpg" alt="Course Image">
-                    <div class="space-y-[8px] px-[18px]">
-                        <div class="flex flex-row items-center justify-between">
-                            <h6
-                                class="bg-[#E1F7E3] text-xxs leading-[12px] font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
-                                Design</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="text-base leading-[22px] font-medium text-[#1D2026]">The Python Mega Course: Build 10
-                            Real World Applications</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[18px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p
-                            class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                            <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]">
-                    <img src="./Images/section-4/Course Images (1).jpg" alt="Course Image">
-                    <div class="space-y-[8px] px-[18px]">
-                        <div class="flex flex-row items-center justify-between">
-                            <h6
-                                class="bg-[#FFF0F0] text-xxs leading-[12px] font-medium uppercase text-[#882929] py-[4px] px-[6px]">
-                                IT & Software</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="text-base leading-[22px] font-medium text-[#1D2026]">Facebook Ads & Facebook Marketing
-                            MASTERY 2021 Cours...</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[18px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p
-                            class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                            <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]">
-                    <img src="./Images/section-4/Course Images (2).jpg" alt="Course Image">
-                    <div class="space-y-[8px] px-[18px]">
-                        <div class="flex flex-row items-center justify-between">
-                            <h6
-                                class="bg-[#EBEBFF] text-xxs leading-[12px] font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
-                                Developments</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="text-base leading-[22px] font-medium text-[#1D2026]">2021 Complete Python Bootcamp
-                            From Zero to Hero in Python</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[18px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p
-                            class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                            <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                        </p>
-                    </div>
-                </div>
-                <div class="space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]">
-                    <img src="./Images/section-4/Course Images (3).jpg" alt="Course Image">
-                    <div class="space-y-[8px] px-[18px]">
-                        <div class="flex flex-row items-center justify-between">
-                            <h6
-                                class="bg-[#EBEBFF] text-xxs leading-[12px] font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
-                                Marketing</h6>
-                            <p class="text-[#FF6636]">$57</p>
-                        </div>
-                        <p class="text-base leading-[22px] font-medium text-[#1D2026]">How to get Diamond in soloQ |
-                            League of Legends | Season 11</p>
-                    </div>
-                    <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                    <div class="flex flex-row items-center justify-between px-[18px]">
-                        <p
-                            class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                            <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
-                        </p>
-                        <p
-                            class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
-                            <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
-                                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button
-                class="bg-[#FFEEE8] text-[#FF6636] flex flex-row mx-auto items-center gap-[12px] px-[24px] text-base leading-[48px] font-semibold hover:bg-[#FF6636] hover:text-white transition-colors duration-300">
-                Browse all Course <span><img src="./Images/ArrowRight.svg" alt=""></span>
-            </button>
-        </section>
-
-        <!-- ============================================
-            BECOME AN INSTRUCTOR SECTION
-         ============================================ -->
-        <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
-            <!-- Instructor Promotion Cards -->
-            <div class="flex flex-row gap-[24px] container mb-[400px]">
-                <!-- Become Instructor Card -->
-                <div class="w-[648px] h-[271px] bg-gradient-to-r from-[#CC522B] to-[#FF6636] flex items-center justify-between">
-                    <div class="text-white p-[40px]">
-                        <h3 class="text-3xl leading-[40px] w-[350px] tracking-[-1%] font-semibold mb-[12px]">
-                            Become an instructor
-                        </h3>
-                        <p class="text-sm leading-[22px] tracking-[-1%] mb-[24px] max-w-[311px]">
-                            Instructors from around the world teach millions
-                            of students on Udemy. We provide the tools
-                            and skills to teach what you love.
-                        </p>
-                        <button
-                            class="bg-white text-base leading-[48px] text-[#FF6636] px-[24px] font-semibold flex items-center gap-[12px]">
-                            Start Teaching
-                            <span><img src="./Images/ArrowRight.svg" alt=""></span>
-                        </button>
-                    </div>
-                    <div class="relative top-[35px] h-[240px] w-[270px]">
-                        <img src="./Images/section-5/7.png" alt="guy">
-                    </div>
-                </div>
-
-                <!-- Teaching Steps Card -->
-                <div class="bg-white p-[40px] space-y-[27px]">
-                    <h3 class="text-3xl text-[#1D2026] leading-[40px] tracking-[-1%] font-semibold">Your teaching &
-                        earning steps</h3>
-                    <div class="grid grid-cols-2 gap-[20px]">
-                        <!-- Step 1 -->
-                        <div class="flex flex-row items-center justify-start gap-[16px]">
-                            <span
-                                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#564FFD] leading-[124%] font-semibold bg-[#EBEBFF] rounded-full">1</span>
-                            <p class="text-base leading-[24px] text-[#1D2026]">Apply to become instructor</p>
-                        </div>
-
-                        <!-- Step 2 -->
-                        <div class="flex flex-row items-center justify-start gap-[16px]">
-                            <span
-                                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#FF6636] leading-[124%] font-semibold bg-[#FFF0F0] rounded-full">2</span>
-                            <p class="text-base leading-[24px] text-[#1D2026]">Build & edit your profile</p>
-                        </div>
-
-                        <!-- Step 3 -->
-                        <div class="flex flex-row items-center justify-start gap-[16px]">
-                            <span
-                                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#E34444] leading-[124%] font-semibold bg-[#FFF0F0] rounded-full">3</span>
-                            <p class="text-base leading-[24px] text-[#1D2026]">Create your new course</p>
-                        </div>
-
-                        <!-- Step 4 -->
-                        <div class="flex flex-row items-center justify-start gap-[16px]">
-                            <span
-                                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#23BD33] leading-[124%] font-semibold bg-[#E1F7E3] rounded-full">4</span>
-                            <p class="text-base leading-[24px] text-[#1D2026]">Start teaching & earning</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Top Instructors Card -->
-            <div class="absolute place-self-center p-[80px] border-[1px] border-[#E9EAF0] space-y-[40px] bg-white">
-                <h2 class="text-4xl leading-[48px] font-semibold text-center">Top instructor of the month</h2>
-
-                <!-- Instructor Grid -->
-                <div class="grid grid-cols-5 gap-[25px]">
-                    <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
-                        <img src="./Images/section-5/Image.jpg" alt="photo">
-                        <div class="space-y-[4px] text-center">
-                            <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Devon Lane</h6>
-                            <p class="text-sm leading-[22px] text-[#8C94A3]">Senior Developer</p>
-                        </div>
-                        <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                        <div class="flex flex-row items-center justify-between px-[16px]">
-                            <p
-                                class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.6
-                            </p>
-                            <p
-                                class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
-                                854 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
-                        <img src="./Images/section-5/Image (1).jpg" alt="photo">
-                        <div class="space-y-[4px] text-center">
-                            <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Darrell Steward</h6>
-                            <p class="text-sm leading-[22px] text-[#8C94A3]">Digital Product Designer</p>
-                        </div>
-                        <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                        <div class="flex flex-row items-center justify-between px-[16px]">
-                            <p
-                                class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.9
-                            </p>
-                            <p
-                                class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
-                                451,444 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
-                        <img src="./Images/section-5/Image (2).jpg" alt="photo">
-                        <div class="space-y-[4px] text-center">
-                            <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Jane Cooper</h6>
-                            <p class="text-sm leading-[22px] text-[#8C94A3]">UI/UX Designer</p>
-                        </div>
-                        <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                        <div class="flex flex-row items-center justify-between px-[16px]">
-                            <p
-                                class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.8
-                            </p>
-                            <p
-                                class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
-                                435,671 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
-                        <img src="./Images/section-5/Image (3).jpg" alt="photo">
-                        <div class="space-y-[4px] text-center">
-                            <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Albert Flores</h6>
-                            <p class="text-sm leading-[22px] text-[#8C94A3]">Adobe Instructor</p>
-                        </div>
-                        <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                        <div class="flex flex-row items-center justify-between px-[16px]">
-                            <p
-                                class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.7
-                            </p>
-                            <p
-                                class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
-                                511,123 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
-                        <img src="./Images/section-5/Image (4).jpg" alt="photo">
-                        <div class="space-y-[4px] text-center">
-                            <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Kathryn Murphy</h6>
-                            <p class="text-sm leading-[22px] text-[#8C94A3]">Lead Developer</p>
-                        </div>
-                        <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
-                        <div class="flex flex-row items-center justify-between px-[16px]">
-                            <p
-                                class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
-                                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.2
-                            </p>
-                            <p
-                                class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
-                                2,711 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-row items-center justify-center gap-[8px] py-[5px]">
-                    <p class="text-[#6E7485] text-sm leading-[22px] text-center">Thousands of students waiting for a
-                        instructor. Start teaching & earning now!.</p>
-                    <a href="#" class="text-[#FF6636] font-medium text-sm leading-[20px]">Browse all</a>
-                    <img src="./Images/ArrowRight.svg" alt="">
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================
-            TRUSTED COMPANIES SECTION
-         ============================================ -->
-        <section class="container py-[80px] flex flex-row items-center gap-[24px] mt-[60px]">
-            <!-- Section Title & Description -->
-            <div class="space-y-[24px]">
-                <h3 class="text-3xl text-[#1D2026] leading-[40px] tracking-[-1%] font-semibold">6.3k trusted companies
-                </h3>
-                <p class="text-sm leading-[22px] text-[#6E7485] tracking-[-1%] max-w-[312px]">Nullam egestas tellus at
-                    enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-            </div>
-
-            <!-- Company Logo Column 1 -->
-            <div class="w-[200px] h-[224px] space-y-[24px]">
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[36.49px]">
-                    <img src="./Images/section-6/Vector.svg" alt="logo">
-                </div>
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[37.34px]">
-                    <img src="./Images/section-6/Group 6.svg" alt="logo">
-                </div>
-            </div>
-
-            <!-- Company Logo Column 2 -->
-            <div class="w-[200px] h-[224px] space-y-[24px]">
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[38.84px]">
-                    <img src="./Images/section-6/Group.svg" alt="logo">
-                </div>
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] pt-[41.02px] pb-[38.95px]">
-                    <img src="./Images/section-6/Vector (2).svg" alt="logo">
-                </div>
-            </div>
-
-            <!-- Company Logo Column 3 -->
-            <div class="w-[200px] h-[224px] space-y-[24px]">
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[33.68px]">
-                    <img src="./Images/section-6/Group 5.svg" alt="logo">
-                </div>
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[40.12px]">
-                    <img src="./Images/section-6/Group 8.svg" alt="logo">
-                </div>
-            </div>
-
-            <!-- Company Logo Column 4 -->
-            <div class="w-[200px] h-[224px] space-y-[24px]">
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[39.7px]">
-                    <img src="./Images/section-6/Vector (1).svg" alt="logo">
-                </div>
-                <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[39.33px]">
-                    <img src="./Images/section-6/Group 7.svg" alt="logo">
-                </div>
-            </div>
-        </section>
-    </main>
+    <section class="flex flex-row items-center justify-between pl-[300px]">
+      <!-- Hero Content -->
+      <div class="space-y-[40px] max-w-[648px]">
+        <h1 class="text-7xl leading-[74px] font-semibold">Learn with expert anytime anywhere</h1>
+        <p class="text-2xl leading-[32px] text-[#4E5566]">Our mision is to help people to find the best course
+          online and learn with expert anytime, anywhere.</p>
+        <button class="px-[32px] py-[16px] font-semibold bg-[#FF6636] text-white hover:bg-[#FF6636]/90">
+          Create Account
+        </button>
+      </div>
+      <div>
+        <img src="./Images/Images-1.jpg" alt="">
+      </div>
+    </section>
 
     <!-- ============================================
+                    CATEGORY SECTION
+             ============================================ -->
+    <section class="py-[80px] container space-y-[40px]">
+      <h2 class="text-4xl leading-[48px] font-semibold text-center">Browse top category</h2>
+
+      <!-- Category Grid (12 items) -->
+      <div class="grid grid-cols-4 text-white text-base leading-[22px] gap-[24px]">
+        <!-- Category Item 1: Design/Label -->
+        <div class="flex flex-row gap-[20px] bg-[#EBEBFF] p-[20px]">
+          <div>
+            <img src="./Images/Frame 145.svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Label</h6>
+            <p class="text-[#6E7485]">63,476 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 2: Business -->
+        <div class="flex flex-row gap-[20px] bg-[#E1F7E3] p-[20px]">
+          <div>
+            <img src="./Images/Frame 145 (2).svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Business</h6>
+            <p class="text-[#6E7485]">52,822 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 3: Finance & Accounting -->
+        <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
+          <div>
+            <img src="./Images/Frame 145 (1).svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Finance & Accounting</h6>
+            <p class="text-[#6E7485]">33,841 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 4: IT & Software -->
+        <div class="flex flex-row gap-[20px] bg-[#FFF0F0] p-[20px]">
+          <div>
+            <img src="./Images/Frame 145 (3).svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">IT & Software</h6>
+            <p class="text-[#6E7485]">22,649 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 5: Personal Development -->
+        <div class="flex flex-row gap-[20px] bg-white shadow-xl p-[20px]">
+          <div>
+            <img src="./Images/Frame 145 (4).svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Personal Development</h6>
+            <p class="text-[#6E7485]">20,126 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 6: Office Productivity -->
+        <div class="flex flex-row gap-[20px] bg-[#F5F7FA] p-[20px]">
+          <div>
+            <img src="./Images/Frame 145 (5).svg" alt="">
+          </div>
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Office Productivity</h6>
+            <p class="text-[#6E7485]">13,932 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 7: Marketing -->
+        <div class="flex flex-row gap-[20px] bg-[#EBEBFF] p-[20px]">
+          <img src="./Images/Frame 145 (6).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Marketing</h6>
+            <p class="text-[#6E7485]">12,068 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 8: Photography & Video -->
+        <div class="flex flex-row gap-[20px] bg-[#F5F7FA] p-[20px]">
+          <img src="./Images/Frame 145 (7).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Photography & Video</h6>
+            <p class="text-[#6E7485]">6,196 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 9: Lifestyle -->
+        <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
+          <img src="./Images/Frame 145 (8).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Lifestyle</h6>
+            <p class="text-[#6E7485]">2,736 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 10: Design -->
+        <div class="flex flex-row gap-[20px] bg-[#FFEEE8] p-[20px]">
+          <img src="./Images/Frame 145 (9).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Design</h6>
+            <p class="text-[#6E7485]">2,600 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 11: Health & Fitness -->
+        <div class="flex flex-row gap-[20px] bg-[#E1F7E3] p-[20px]">
+          <img src="./Images/Frame 145 (10).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Health & Fitness</h6>
+            <p class="text-[#6E7485]">1,678 Courses</p>
+          </div>
+        </div>
+
+        <!-- Category Item 12: Music -->
+        <div class="flex flex-row gap-[20px] bg-[#FFF2E5] p-[20px]">
+          <img src="./Images/Frame 145 (11).svg" alt="">
+          <div class="space-y-[8px]">
+            <h6 class="text-[#1D2026] font-medium">Music</h6>
+            <p class="text-[#6E7485]">959 Courses</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Browse All CTA -->
+      <div class="flex flex-row items-center justify-center gap-[8px] py-[6px]">
+        <p class="text-[#6E7485] text-center">We have more category & subcategory.</p>
+        <a href="#" class="text-[#FF6636] font-medium text-sm leading-[20px]">Browse all</a>
+        <img src="./Images/ArrowRight.svg" alt="">
+      </div>
+    </section>
+
+    <!-- ============================================
+                BEST SELLING COURSES SECTION
+             ============================================ -->
+    <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
+      <h2 class="text-4xl leading-[48px] font-semibold text-center">Best selling courses</h2>
+
+      <!-- Course Cards Grid (10 items) -->
+      <div class="grid grid-cols-5 gap-[25px] container mt-[40px] mb-[400px]">
+        <!-- Course Card 1: Design -->
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images.jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#FFEEE8] text-xxs leading-xxs font-medium uppercase text-[#993D20] py-[4px] px-[6px]">
+                Design</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Machine Learning A-Z™:<br> Hands-On
+              Python & R In Data...</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (1).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
+                Developments</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete 2021 Web Development
+              Bootcamp</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (2).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                Business</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Learn Python Programming Masterclass
+            </p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (3).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
+                Marketing</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Digital Marketing Course
+              - 12 Courses in 1</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (4).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#FFF0F0] text-xxs leading-xxs font-medium uppercase text-[#882929] py-[4px] px-[6px]">
+                IT & Software</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Reiki Level I, II and Master/Teacher
+              Program</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (5).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#FFF2E5] text-xxs leading-xxs font-medium uppercase text-[#65390C] py-[4px] px-[6px]">
+                Music</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Complete Foundation Stock Trading
+              Course</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (6).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#EBEBFF] text-xxs leading-xxs font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
+                Marketing</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Beginner to Pro in Excel: Financial
+              Modeling and Valuati...</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (7).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                Health & Fitness</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">The Python Mega Course: Build 10 Real
+              World Applications</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (8).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#FFEEE8] text-xxs leading-xxs font-medium uppercase text-[#993D20] py-[4px] px-[6px]">
+                Design</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Copywriting - Become a Freelance
+              Copywriter, your ow...</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[14px] pb-[14px] bg-white">
+          <img src="./Images/section-3/Course Images (9).jpg" alt="">
+          <div class="space-y-[10px]">
+            <div class="flex flex-row justify-between items-center px-[14px]">
+              <h6 class="bg-[#FFF2E5] text-xxs leading-xxs font-medium uppercase text-[#65390C] py-[4px] px-[6px]">
+                Lifestyle</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="max-w-[216px] text-sm leading-[20px] mx-[14px]">Google Analytics Certification - Learn
+              How To Pass The Exam</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[14px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm leading-[20px] text-[#4E5566] font-medium">265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="p-[80px] bg-white border-[1px] border-[#E9EAF0] absolute place-self-center">
+        <div class="flex justify-between items-start mb-14">
+          <h2 class="text-4xl leading-[48px] font-semibold text-[#1D2026]">
+            Our feature courses
+          </h2>
+          <p class="text-[#4E5566] max-w-[424px] text-sm leading-[22px]">
+            Vestibulum sed dolor sed diam mollis maximus vel nec dolor. Donec varius purus et eleifend
+            porta.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-[24px]">
+          <div class="border-[1px] border-[#E9EAF0] flex">
+            <img src="./Images/section-3/Course-Images.jpg" alt="">
+            <div class="py-[16px] space-y-[17px]">
+              <div class="space-y-[8px] px-[24px]">
+                <div class="flex flex-row items-center justify-between">
+                  <h6 class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                    Health & Fitness</h6>
+                  <p class="text-xl leading-[24px]">$14.00 <span
+                      class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
+                </div>
+                <p class="text-base leading-[22px] font-medium text-[#1D2026]">Investing In Stocks The
+                  Complete Course!
+                  (13 H...</p>
+              </div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <div class="flex flex-row items-center gap-[12px]">
+                  <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
+                  <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
+                </div>
+                <p class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
+                  <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
+                    class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
+                </p>
+              </div>
+              <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+                  <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                    class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-[1px] border-[#E9EAF0] flex">
+            <img src="./Images/section-3/Course-Images (1).jpg" alt="">
+            <div class="py-[16px] space-y-[17px]">
+              <div class="space-y-[8px] px-[24px]">
+                <div class="flex flex-row items-center justify-between">
+                  <h6 class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                    Personal Development</h6>
+                  <p class="text-xl leading-[24px]">$14.00 <span
+                      class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
+                </div>
+                <p class="text-base leading-[22px] font-medium text-[#1D2026]">Google Analytics
+                  Certification - Learn How To...</p>
+              </div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <div class="flex flex-row items-center gap-[12px]">
+                  <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
+                  <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
+                </div>
+                <p class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
+                  <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
+                    class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
+                </p>
+              </div>
+              <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+                  <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                    class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-[1px] border-[#E9EAF0] flex">
+            <img src="./Images/section-3/Course-Images (2).jpg" alt="">
+            <div class="py-[16px] space-y-[17px]">
+              <div class="space-y-[8px] px-[24px]">
+                <div class="flex flex-row items-center justify-between">
+                  <h6 class="bg-[#F5F7FA] text-xxs leading-xxs font-medium uppercase text-[#1D2026] py-[4px] px-[6px]">
+                    Productivity</h6>
+                  <p class="text-xl leading-[24px]">$14.00 <span
+                      class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
+                </div>
+                <p class="text-base leading-[22px] font-medium text-[#FF6636]">Adobe XD for Web Design:
+                  Essential Principles</p>
+              </div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <div class="flex flex-row items-center gap-[12px]">
+                  <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
+                  <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
+                </div>
+                <p class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
+                  <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
+                    class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
+                </p>
+              </div>
+              <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+                  <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                    class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="border-[1px] border-[#E9EAF0] flex">
+            <img src="./Images/section-3/Course-Images (3).jpg" alt="">
+            <div class="py-[16px] space-y-[17px]">
+              <div class="space-y-[8px] px-[24px]">
+                <div class="flex flex-row items-center justify-between">
+                  <h6 class="bg-[#E1F7E3] text-xxs leading-xxs font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                    Music</h6>
+                  <p class="text-xl leading-[24px]">$14.00 <span
+                      class="text-sm text-[#A1A5B3] line-through">$26.00</span></p>
+                </div>
+                <p class="text-base leading-[22px] font-medium text-[#1D2026]">The Python Mega Course:
+                  Build 10 Real World ...</p>
+              </div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <div class="flex flex-row items-center gap-[12px]">
+                  <img src="./Images/section-3/Photo.jpg" alt="photo" class="rounded-full">
+                  <h5 class="text-sm leading-[22px] text-[#4E5566]">Kevin Gilbert</h5>
+                </div>
+                <p class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
+                  <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
+                    class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
+                </p>
+              </div>
+              <div class="w-[428px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+              <div class="flex flex-row items-center justify-between px-[20px]">
+                <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+                  <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                    class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
+                </p>
+                <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+                  <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+            RECENTLY ADDED COURSES SECTION
+         ============================================ -->
+    <section class="relative container py-[80px] space-y-[40px] mt-[60px]">
+      <h2 class="text-4xl leading-[48px] font-semibold text-center">Recently added courses</h2>
+
+      <!-- Recently Added Courses Grid -->
+      <div class="grid grid-cols-4 gap-[24px]">
+        <div class="course-card space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]"
+          data-title="The Python Mega Course: Build 10 Real World Applications" data-category="Design" data-price="$57"
+          data-image="./Images/section-4/Course Images.jpg">
+          <img src="./Images/section-4/Course Images.jpg" alt="Course Image">
+          <div class="space-y-[8px] px-[18px]">
+            <div class="flex flex-row items-center justify-between">
+              <h6 class="bg-[#E1F7E3] text-xxs leading-[12px] font-medium uppercase text-[#15711F] py-[4px] px-[6px]">
+                Design</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="text-base leading-[22px] font-medium text-[#1D2026]">The Python Mega Course: Build 10
+              Real World Applications</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[18px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+              <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+            </p>
+          </div>
+        </div>
+        <div class="course-card space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]" data-title="Facebook Ads & Facebook Marketing
+              MASTERY 2021 Cours..." data-category="IT & Software" data-price="$57"
+          data-image="./Images/section-4/Course Images (1).jpg">
+          <img src="./Images/section-4/Course Images (1).jpg" alt="Course Image">
+          <div class="space-y-[8px] px-[18px]">
+            <div class="flex flex-row items-center justify-between">
+              <h6 class="bg-[#FFF0F0] text-xxs leading-[12px] font-medium uppercase text-[#882929] py-[4px] px-[6px]">
+                IT & Software</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="text-base leading-[22px] font-medium text-[#1D2026]">Facebook Ads & Facebook Marketing
+              MASTERY 2021 Cours...</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[18px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+              <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+            </p>
+          </div>
+        </div>
+        <div class="course-card space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]" data-title="2021 Complete Python Bootcamp
+              From Zero to Hero in Python" data-category="Developments" data-price="$57"
+          data-image="./Images/section-4/Course Images (2).jpg">
+          <img src="./Images/section-4/Course Images (2).jpg" alt="Course Image">
+          <div class="space-y-[8px] px-[18px]">
+            <div class="flex flex-row items-center justify-between">
+              <h6 class="bg-[#EBEBFF] text-xxs leading-[12px] font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
+                Developments</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="text-base leading-[22px] font-medium text-[#1D2026]">2021 Complete Python Bootcamp
+              From Zero to Hero in Python</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[18px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+              <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+            </p>
+          </div>
+        </div>
+        <div class="course-card space-y-[14px] border-[1px] pb-[14px] border-[#E9EAF0]" data-title="How to get Diamond in soloQ |
+              League of Legends | Season 11" data-category="Marketing" data-price="$57"
+          data-image="./Images/section-4/Course Images (3).jpg">
+          <img src="./Images/section-4/Course Images (3).jpg" alt="Course Image">
+          <div class="space-y-[8px] px-[18px]">
+            <div class="flex flex-row items-center justify-between">
+              <h6 class="bg-[#EBEBFF] text-xxs leading-[12px] font-medium uppercase text-[#342F98] py-[4px] px-[6px]">
+                Marketing</h6>
+              <p class="text-[#FF6636]">$57</p>
+            </div>
+            <p class="text-base leading-[22px] font-medium text-[#1D2026]">How to get Diamond in soloQ |
+              League of Legends | Season 11</p>
+          </div>
+          <div class="w-full h-[0px] border-[1px] border-[#E9EAF0]"></div>
+          <div class="flex flex-row items-center justify-between px-[18px]">
+            <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0
+            </p>
+            <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+              <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+                class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="hoverCard"
+        class="w-[433px] space-y-[20px] shadow-xl fixed pt-[20px] pb-[42px] border border-[1px] border-[#E9EAF0] opacity-0 pointer-events-none transition-all bg-white duration-200 z-50">
+        <div class="space-y-[16px] px-[20px]">
+          <div class="space-y-[10px]">
+            <h6 id="hoverCategory"
+              class="bg-[#EBEBFF] text-xxs leading-[12px] font-medium uppercase text-[#342F98] py-[4px] px-[6px] max-w-[94px]">
+              Developments</h6>
+            <p id="hoverTitle" class="text-xl leading-[24px] font-medium text-[#1D2026]">2021 Complete Python Bootcamp
+              From Zero to Hero
+              in Python</p>
+          </div>
+          <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center gap-[12px]">
+              <img src="./Images/section-4/Photo.svg" alt="photo" class="rounded-full">
+              <div>
+                <p class="text-sm leading-[22px] tracking-[-1%] text-[#8C94A3]">Course by</p>
+                <h5 class="text-sm leading-[22px][-1%] tracking- text-[#4E5566]">Kevin Gilbert</h5>
+              </div>
+            </div>
+            <p class="flex flex-row items-center gap-[4px] text-base font-medium leading-[150%] text-[#1D2026]">
+              <span><img src="./Images/section-3/Star.svg" alt=""></span>5.0 <span
+                class="text-sm leading-[22px] text-[#8C94A3]">(357,914)</span>
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-between px-[20px]">
+          <p class="text-sm flex flex-row items-center gap-[4px] leading-[22px] text-[#4E5566] font-medium">
+            <span><img src="./Images/section-3/User.svg" alt="icon"></span> 265.7K <span
+              class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+          </p>
+          <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+            <span><img src="./Images/section-3/bar-chart.svg" alt="icon"></span> Beginner
+          </p>
+          <p class="flex flex-row items-center gap-[4px] text-sm leading-[22px] text-[#4E5566]">
+            <span><img src="./Images/section-3/Clock.svg" alt="icon"></span> 6 hour
+          </p>
+        </div>
+        <div class="flex flex-row items-center justify-between px-[20px]">
+          <div class="flex flex-row items-center justify-between gap-[10px]">
+            <p id="hoverPrice" class="text-2xl leading-[32px] text-[#1D2026]">$14.00 <span
+                class="text-base leading-[24px] text-[#8C94A3]">$26.00</span></p>
+            <p class="py-[8px] px-[12px] bg-[#FFEEE8] uppercase text-[#FF6636] font-medium">56% OFF</p>
+          </div>
+          <div class="bg-[#FFEEE8] p-[12px]">
+            <img src="./Images/section-4/Heart.svg" alt="">
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#E9EAF0]"></div>
+        <div class="space-y-[8px] px-[20px]">
+          <h5 class="text-xs leading-[12px] uppercase font-medium text-[#1D2026]">What you’ll learn</h5>
+          <div class="flex flex-row items-start gap-[8px]">
+            <img src="./Images/section-4/Check.svg" alt="">
+            <p class="text-sm leading-[22px] tracking-[-1%] text-[#6E7485]">Learn to use Python professionally, learning
+              both Python 2 and Python 3!</p>
+          </div>
+          <div class="flex flex-row items-start gap-[8px]">
+            <img src="./Images/section-4/Check.svg" alt="">
+            <p class="text-sm leading-[22px] tracking-[-1%] text-[#6E7485]">Create games with Python, like Tic Tac Toe
+              and Blackjack!</p>
+          </div>
+          <div class="flex flex-row items-start gap-[8px]">
+            <img src="./Images/section-4/Check.svg" alt="">
+            <p class="text-sm leading-[22px] tracking-[-1%] text-[#6E7485]">Create games with Python, like Tic Tac Toe
+              and Blackjack!</p>
+          </div>
+        </div>
+        <div class="w-full h-[1px] bg-[#E9EAF0]"></div>
+        <div class="space-y-[12px] px-[22.5px]">
+          <button id="addToCartBtn"
+            class="flex flex-row items-center gap-[12px] justify-center w-full bg-[#FF6636] px-[24px] text-base leading-[48px] tracking-[-0.8%] font-semibold text-white hover:bg-orange-600"><span><img
+                src="./Images/section-4/ShoppingCartSimple.svg" alt=""></span> Add to Cart</button>
+          <button
+            class="flex flex-row items-center gap-[12px] justify-center w-full bg-[#FFEEE8] px-[24px] text-base leading-[48px] tracking-[-0.8%] font-semibold text-[#FF6636] hover:bg-[#FF6636] hover:text-white transition-colors duration-300">Course
+            Detail</button>
+        </div>
+      </div>
+      <button
+        class="bg-[#FFEEE8] text-[#FF6636] flex flex-row mx-auto items-center gap-[12px] px-[24px] text-base leading-[48px] font-semibold hover:bg-[#FF6636] hover:text-white transition-colors duration-300">
+        Browse all Course <span><img src="./Images/ArrowRight.svg" alt=""></span>
+      </button>
+    </section>
+
+    <!-- ============================================
+            BECOME AN INSTRUCTOR SECTION
+         ============================================ -->
+    <section class="relative bg-[#F5F7FA] pt-[80px] pb-[320px]">
+      <!-- Instructor Promotion Cards -->
+      <div class="flex flex-row gap-[24px] container mb-[400px]">
+        <!-- Become Instructor Card -->
+        <div class="w-[648px] h-[271px] bg-gradient-to-r from-[#CC522B] to-[#FF6636] flex items-center justify-between">
+          <div class="text-white p-[40px]">
+            <h3 class="text-3xl leading-[40px] w-[350px] tracking-[-1%] font-semibold mb-[12px]">
+              Become an instructor
+            </h3>
+            <p class="text-sm leading-[22px] tracking-[-1%] mb-[24px] max-w-[311px]">
+              Instructors from around the world teach millions
+              of students on Udemy. We provide the tools
+              and skills to teach what you love.
+            </p>
+            <button
+              class="bg-white text-base leading-[48px] text-[#FF6636] px-[24px] font-semibold flex items-center gap-[12px]">
+              Start Teaching
+              <span><img src="./Images/ArrowRight.svg" alt=""></span>
+            </button>
+          </div>
+          <div class="relative top-[35px] h-[240px] w-[270px]">
+            <img src="./Images/section-5/7.png" alt="guy">
+          </div>
+        </div>
+
+        <!-- Teaching Steps Card -->
+        <div class="bg-white p-[40px] space-y-[27px]">
+          <h3 class="text-3xl text-[#1D2026] leading-[40px] tracking-[-1%] font-semibold">Your teaching &
+            earning steps</h3>
+          <div class="grid grid-cols-2 gap-[20px]">
+            <!-- Step 1 -->
+            <div class="flex flex-row items-center justify-start gap-[16px]">
+              <span
+                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#564FFD] leading-[124%] font-semibold bg-[#EBEBFF] rounded-full">1</span>
+              <p class="text-base leading-[24px] text-[#1D2026]">Apply to become instructor</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="flex flex-row items-center justify-start gap-[16px]">
+              <span
+                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#FF6636] leading-[124%] font-semibold bg-[#FFF0F0] rounded-full">2</span>
+              <p class="text-base leading-[24px] text-[#1D2026]">Build & edit your profile</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="flex flex-row items-center justify-start gap-[16px]">
+              <span
+                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#E34444] leading-[124%] font-semibold bg-[#FFF0F0] rounded-full">3</span>
+              <p class="text-base leading-[24px] text-[#1D2026]">Create your new course</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="flex flex-row items-center justify-start gap-[16px]">
+              <span
+                class="py-[11px] w-[52px] h-[52px] text-center text-2xl text-[#23BD33] leading-[124%] font-semibold bg-[#E1F7E3] rounded-full">4</span>
+              <p class="text-base leading-[24px] text-[#1D2026]">Start teaching & earning</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Instructors Card -->
+      <div class="absolute place-self-center p-[80px] border-[1px] border-[#E9EAF0] space-y-[40px] bg-white">
+        <h2 class="text-4xl leading-[48px] font-semibold text-center">Top instructor of the month</h2>
+
+        <!-- Instructor Grid -->
+        <div class="grid grid-cols-5 gap-[25px]">
+          <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
+            <img src="./Images/section-5/Image.jpg" alt="photo">
+            <div class="space-y-[4px] text-center">
+              <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Devon Lane</h6>
+              <p class="text-sm leading-[22px] text-[#8C94A3]">Senior Developer</p>
+            </div>
+            <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+            <div class="flex flex-row items-center justify-between px-[16px]">
+              <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.6
+              </p>
+              <p class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
+                854 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
+            <img src="./Images/section-5/Image (1).jpg" alt="photo">
+            <div class="space-y-[4px] text-center">
+              <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Darrell Steward</h6>
+              <p class="text-sm leading-[22px] text-[#8C94A3]">Digital Product Designer</p>
+            </div>
+            <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+            <div class="flex flex-row items-center justify-between px-[16px]">
+              <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.9
+              </p>
+              <p class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
+                451,444 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
+            <img src="./Images/section-5/Image (2).jpg" alt="photo">
+            <div class="space-y-[4px] text-center">
+              <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Jane Cooper</h6>
+              <p class="text-sm leading-[22px] text-[#8C94A3]">UI/UX Designer</p>
+            </div>
+            <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+            <div class="flex flex-row items-center justify-between px-[16px]">
+              <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.8
+              </p>
+              <p class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
+                435,671 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
+            <img src="./Images/section-5/Image (3).jpg" alt="photo">
+            <div class="space-y-[4px] text-center">
+              <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Albert Flores</h6>
+              <p class="text-sm leading-[22px] text-[#8C94A3]">Adobe Instructor</p>
+            </div>
+            <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+            <div class="flex flex-row items-center justify-between px-[16px]">
+              <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.7
+              </p>
+              <p class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
+                511,123 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-white pb-[12px] space-y-[12px] border-[1px] border-[#E9EAF0]">
+            <img src="./Images/section-5/Image (4).jpg" alt="photo">
+            <div class="space-y-[4px] text-center">
+              <h6 class="text-base leading-[22px] text-[#1D2026] font-medium">Kathryn Murphy</h6>
+              <p class="text-sm leading-[22px] text-[#8C94A3]">Lead Developer</p>
+            </div>
+            <div class="w-[244px] h-[0px] border-[1px] border-[#E9EAF0]"></div>
+            <div class="flex flex-row items-center justify-between px-[16px]">
+              <p class="flex flex-row items-center gap-[4px] text-sm font-medium leading-[20px] text-[#4E5566]">
+                <span><img src="./Images/section-3/Star.svg" alt=""></span>4.2
+              </p>
+              <p class="text-sm flex flex-row items-center gap-[4px] leading-[20px] text-[#4E5566] font-medium">
+                2,711 <span class="leading-[22px] font-normal text-[#8C94A3]">students</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-[8px] py-[5px]">
+          <p class="text-[#6E7485] text-sm leading-[22px] text-center">Thousands of students waiting for a
+            instructor. Start teaching & earning now!.</p>
+          <a href="#" class="text-[#FF6636] font-medium text-sm leading-[20px]">Browse all</a>
+          <img src="./Images/ArrowRight.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+            TRUSTED COMPANIES SECTION
+         ============================================ -->
+    <section class="container py-[80px] flex flex-row items-center gap-[24px] mt-[60px]">
+      <!-- Section Title & Description -->
+      <div class="space-y-[24px]">
+        <h3 class="text-3xl text-[#1D2026] leading-[40px] tracking-[-1%] font-semibold">6.3k trusted companies
+        </h3>
+        <p class="text-sm leading-[22px] text-[#6E7485] tracking-[-1%] max-w-[312px]">Nullam egestas tellus at
+          enim ornare tristique. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+      </div>
+
+      <!-- Company Logo Column 1 -->
+      <div class="w-[200px] h-[224px] space-y-[24px]">
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[36.49px]">
+          <img src="./Images/section-6/Vector.svg" alt="logo">
+        </div>
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[37.34px]">
+          <img src="./Images/section-6/Group 6.svg" alt="logo">
+        </div>
+      </div>
+
+      <!-- Company Logo Column 2 -->
+      <div class="w-[200px] h-[224px] space-y-[24px]">
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[38.84px]">
+          <img src="./Images/section-6/Group.svg" alt="logo">
+        </div>
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] pt-[41.02px] pb-[38.95px]">
+          <img src="./Images/section-6/Vector (2).svg" alt="logo">
+        </div>
+      </div>
+
+      <!-- Company Logo Column 3 -->
+      <div class="w-[200px] h-[224px] space-y-[24px]">
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[33.68px]">
+          <img src="./Images/section-6/Group 5.svg" alt="logo">
+        </div>
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[40.12px]">
+          <img src="./Images/section-6/Group 8.svg" alt="logo">
+        </div>
+      </div>
+
+      <!-- Company Logo Column 4 -->
+      <div class="w-[200px] h-[224px] space-y-[24px]">
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[39.7px]">
+          <img src="./Images/section-6/Vector (1).svg" alt="logo">
+        </div>
+        <div class="px-[50px] bg-white shadow-[0_0_32px_0_rgba(9,26,68,0.07)] py-[39.33px]">
+          <img src="./Images/section-6/Group 7.svg" alt="logo">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
                     FOOTER SECTION
          ============================================ -->
-    <footer class="text-white bg-[#1D2026] space-y-[80px]">
-        <!-- Footer Top Content -->
-        <div class="py-[100px] container flex flex-row items-center gap-[136px]">
-            <!-- CTA Section -->
-            <div class="max-w-[536px] space-y-[32px]">
-                <h2 class="text-4xl leading-[48px] font-semibold">Start learning with 67.1k students around the world.
-                </h2>
-                <div class="flex items-center gap-[16px]">
-                    <button class="bg-[#FF6636] px-[24px] text-base leading-[48px] hover:bg-[#e05a2e]">Join the
-                        Family</button>
-                    <button
-                        class="font-medium text-base bg-[#ffffff0d] px-[24px] leading-[48px] hover:bg-[#ffffff1a]">Browse
-                        all courses</button>
-                </div>
-            </div>
+  <footer class="text-white bg-[#1D2026] space-y-[80px]">
+    <!-- Footer Top Content -->
+    <div class="py-[100px] container flex flex-row items-center gap-[136px]">
+      <!-- CTA Section -->
+      <div class="max-w-[536px] space-y-[32px]">
+        <h2 class="text-4xl leading-[48px] font-semibold">Start learning with 67.1k students around the world.
+        </h2>
+        <div class="flex items-center gap-[16px]">
+          <button class="bg-[#FF6636] px-[24px] text-base leading-[48px] hover:bg-[#e05a2e]">Join the
+            Family</button>
+          <button class="font-medium text-base bg-[#ffffff0d] px-[24px] leading-[48px] hover:bg-[#ffffff1a]">Browse
+            all courses</button>
+        </div>
+      </div>
 
-            <!-- Stats -->
-            <div class="flex flex-row items-center gap-[24px]">
-                <!-- Courses Stat -->
-                <div class="space-y-[12px] w-[200px]">
-                    <h2 class="text-4xl leading-[48px] font-semibold">6.3k</h2>
-                    <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Online courses</p>
-                </div>
-
-                <!-- Instructors Stat -->
-                <div class="space-y-[12px] w-[200px]">
-                    <h2 class="text-4xl leading-[48px] font-semibold">26k</h2>
-                    <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Certified Instructor</p>
-                </div>
-
-                <!-- Success Rate Stat -->
-                <div class="space-y-[12px] w-[200px]">
-                    <h2 class="text-4xl leading-[48px] font-semibold">99.9%</h2>
-                    <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Sucess Rate</p>
-                </div>
-            </div>
+      <!-- Stats -->
+      <div class="flex flex-row items-center gap-[24px]">
+        <!-- Courses Stat -->
+        <div class="space-y-[12px] w-[200px]">
+          <h2 class="text-4xl leading-[48px] font-semibold">6.3k</h2>
+          <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Online courses</p>
         </div>
 
-        <!-- Footer Links -->
-        <div class="max-w-[1320px] mx-auto flex justify-between">
-            <!-- Logo & Social Links -->
-            <div class="max-w-[424px]">
-                <img src="./Images/footer/LOGO.svg" alt="">
-
-                <p class="text-sm leading-[22px] tracking-[-1%] text-[#8C94A3] mb-[26px] mt-[20px]">
-                    Aliquam rhoncus ligula est, non pulvinar elit <br>
-                    convallis nec. Donec mattis odio at.
-                </p>
-
-                <!-- Social Icons -->
-                <div class="flex gap-[12px]">
-                    <img src="./Images/footer/Frame 75.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
-                    <img src="./Images/footer/Instragarm.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
-                    <img src="./Images/footer/Linkedin.svg" class="w-[46px] h-[46px] p-[14px] bg-orange-500">
-                    <img src="./Images/footer/Twitter.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
-                    <img src="./Images/footer/Frame 74.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
-                </div>
-            </div>
-
-            <!-- Top Categories Links -->
-            <div>
-                <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">TOP 4 CATEGORY</h3>
-                <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
-                    <li>Development</li>
-                    <li>Finance & Accounting</li>
-                    <li>Design</li>
-                    <li>Business</li>
-                </ul>
-            </div>
-
-            <!-- Quick Links -->
-            <div>
-                <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">QUICK LINKS</h3>
-                <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
-                    <li>About</li>
-                    <li class="text-white border-b border-orange-500 w-fit pb-1">
-                        Become Instructor →
-                    </li>
-                    <li>Contact</li>
-                    <li>Career</li>
-                </ul>
-            </div>
-
-            <!-- Support Links -->
-            <div>
-                <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">SUPPORT</h3>
-                <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
-                    <li>Help Center</li>
-                    <li>FAQs</li>
-                    <li>Terms & Condition</li>
-                    <li>Privacy Policy</li>
-                </ul>
-            </div>
-
-            <!-- Download App Section -->
-            <div>
-                <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">DOWNLOAD OUR APP</h3>
-
-                <div class="space-y-[12px]">
-                    <img src="./Images/footer/Download our app.svg" alt="">
-                    <img src="./Images/footer/Download our app (1).svg" alt="">
-                </div>
-            </div>
-
+        <!-- Instructors Stat -->
+        <div class="space-y-[12px] w-[200px]">
+          <h2 class="text-4xl leading-[48px] font-semibold">26k</h2>
+          <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Certified Instructor</p>
         </div>
 
-        <!-- Footer Bottom Copyright & Language Selector -->
-        <div class="flex flex-row justify-between py-[24px] px-[300px] border-t border-gray-700">
-            <p class="text-sm leading-[22px] tracking-[-1%] text-[#8C94A3]">© 2021 - Eduflex. Designed by <span
-                    class="text-white">Templatecookie</span>. All rights reserved</p>
-            <div class="ml-[50px] mr-[16px]">
-                <button
-                    class="flex items-center justify-between gap-2 border border-[#363B47] text-[#8C94A3] w-[200px] h-[48px] px-[16px] rounded-md hover:bg-gray-50">
-                    English
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
+        <!-- Success Rate Stat -->
+        <div class="space-y-[12px] w-[200px]">
+          <h2 class="text-4xl leading-[48px] font-semibold">99.9%</h2>
+          <p class="text-base leading-[22px] font-medium text-[#B7BAC7]">Sucess Rate</p>
         </div>
-    </footer>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="max-w-[1320px] mx-auto flex justify-between">
+      <!-- Logo & Social Links -->
+      <div class="max-w-[424px]">
+        <img src="./Images/footer/LOGO.svg" alt="">
+
+        <p class="text-sm leading-[22px] tracking-[-1%] text-[#8C94A3] mb-[26px] mt-[20px]">
+          Aliquam rhoncus ligula est, non pulvinar elit <br>
+          convallis nec. Donec mattis odio at.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="flex gap-[12px]">
+          <img src="./Images/footer/Frame 75.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
+          <img src="./Images/footer/Instragarm.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
+          <img src="./Images/footer/Linkedin.svg" class="w-[46px] h-[46px] p-[14px] bg-orange-500">
+          <img src="./Images/footer/Twitter.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
+          <img src="./Images/footer/Frame 74.svg" class="w-[46px] h-[46px] p-[14px] bg-[#363B4766]">
+        </div>
+      </div>
+
+      <!-- Top Categories Links -->
+      <div>
+        <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">TOP 4 CATEGORY</h3>
+        <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
+          <li>Development</li>
+          <li>Finance & Accounting</li>
+          <li>Design</li>
+          <li>Business</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">QUICK LINKS</h3>
+        <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
+          <li>About</li>
+          <li class="text-white border-b border-orange-500 w-fit pb-1">
+            Become Instructor →
+          </li>
+          <li>Contact</li>
+          <li>Career</li>
+        </ul>
+      </div>
+
+      <!-- Support Links -->
+      <div>
+        <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">SUPPORT</h3>
+        <ul class="space-y-[12px] text-[#8C94A3] text-sm leading-[22px]">
+          <li>Help Center</li>
+          <li>FAQs</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <!-- Download App Section -->
+      <div>
+        <h3 class="text-white text-sm leading-[100%] uppercase font-medium mb-[20px]">DOWNLOAD OUR APP</h3>
+
+        <div class="space-y-[12px]">
+          <img src="./Images/footer/Download our app.svg" alt="">
+          <img src="./Images/footer/Download our app (1).svg" alt="">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom Copyright & Language Selector -->
+    <div class="flex flex-row justify-between py-[24px] px-[300px] border-t border-gray-700">
+      <p class="text-sm leading-[22px] tracking-[-1%] text-[#8C94A3]">© 2021 - Eduflex. Designed by <span
+          class="text-white">Templatecookie</span>. All rights reserved</p>
+      <div class="ml-[50px] mr-[16px]">
+        <button
+          class="flex items-center justify-between gap-2 border border-[#363B47] text-[#8C94A3] w-[200px] h-[48px] px-[16px] rounded-md hover:bg-gray-50">
+          English
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
