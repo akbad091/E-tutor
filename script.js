@@ -8,7 +8,7 @@ const hoverPrice = document.getElementById('hoverPrice');
 const hoverImage = document.getElementById('hoverImage');
 
 cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
+  card.addEventListener('mouseover', () => {
     const rect = card.getBoundingClientRect();
 
     // 🧠 Get data from hovered card
@@ -42,7 +42,7 @@ cards.forEach(card => {
     hoverCard.classList.add('opacity-100');
   });
 
-  card.addEventListener('mouseleave', () => {
+  card.addEventListener('mouseout', () => {
     setTimeout(() => {
       if (!hoverCard.matches(':hover')) {
         hoverCard.classList.add('opacity-0', 'pointer-events-none');
@@ -53,13 +53,13 @@ cards.forEach(card => {
 });
 
 // Keep visible
-hoverCard.addEventListener('mouseenter', () => {
+hoverCard.addEventListener('mouseover', () => {
   hoverCard.classList.remove('opacity-0', 'pointer-events-none');
   hoverCard.classList.add('opacity-100');
 });
 
 // Hide
-hoverCard.addEventListener('mouseleave', () => {
+hoverCard.addEventListener('mouseout', () => {
   hoverCard.classList.add('opacity-0', 'pointer-events-none');
   hoverCard.classList.remove('opacity-100');
 });
