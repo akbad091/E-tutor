@@ -219,7 +219,7 @@
               <p class="text-sm leading-[22px] tracking-[-1%] text-[#4E5566] w-full">New Payment Cards</p>
               <span class="check rounded">
                 <label class="cursor-pointer flex items-center">
-                  <input type="checkbox" class="peer hidden">
+                  <input type="checkbox" class="peer hidden" id="checkBox">
                   <div class="w-[24px] h-[24px] rounded-full border-2 border-gray-300 flex items-center justify-center
                     peer-checked:bg-[url('./gift_course-images/Check-Box.svg')] transition-all duration-200">
                   </div>
@@ -227,7 +227,7 @@
               </span>
             </div>
           </div>
-          <div class="space-y-[18px]">
+          <div id="cardInfo" class="space-y-[18px] hidden">
             <div class="form space-y-[6px]">
               <label class="block text-sm leading-[22px] tracking-[-1%] text-[#1D2026]">Name</label>
               <input type="text" placeholder="Name on card"
@@ -259,7 +259,7 @@
 
           </div>
           <div class="flex flex-row gap-[10px]">
-            <img src="./gift_course-images/Check Box.svg" alt="Check">
+            <img src="./gift_course-images/Check-Box.svg" alt="Check">
             <p class="text-sm leading-[22px] tracking-[-1%] text-[#4E5566]">Remember this card, save it on my card list
             </p>
           </div>
